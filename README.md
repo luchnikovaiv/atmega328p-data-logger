@@ -1,15 +1,9 @@
 # Регистратор аналоговых данных на базе ATmega328P-PU
 
-[![MCU](https://img.shields.io/badge/MCU-ATmega328P--PU-0066CC)](https://www.microchip.com/en-us/product/atmega328p)
-[![Firmware](https://img.shields.io/badge/Firmware-Arduino%20IDE%20%2F%20C%2B%2B-00979D?logo=arduino&logoColor=white)](#-прошивка)
-[![PCB](https://img.shields.io/badge/PCB-Altium%20Designer-A5915F)](#-печатная-плата)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 Автономный двухканальный регистратор (data logger) аналоговых сигналов с записью на microSD-карту и метками времени от часов реального времени DS1307. Курсовая работа по кафедре ИУ4 «Проектирование и технология производства электронной аппаратуры» МГТУ им. Н. Э. Баумана.
 
 <p align="center">
   <img src="docs/device_top.jpg" alt="Собранное устройство" width="420">
-  <img src="docs/device_recording.jpg" alt="Устройство в режиме записи" width="420">
 </p>
 
 <details>
@@ -90,8 +84,8 @@ Developed as a course project at the Department IU4 "Design and Technology of El
 ### Структурная и функциональная схемы
 
 <p align="center">
-  <img src="docs/images/block_diagram_e1.png" alt="Схема электрическая структурная Э1" width="46%">
-  <img src="docs/images/functional_diagram_e2.png" alt="Схема электрическая функциональная Э2" width="52%">
+  <img src="docs/block_diagram_e1.png" alt="Схема электрическая структурная Э1" width="46%">
+  <img src="docs/functional_diagram_e2.png" alt="Схема электрическая функциональная Э2" width="52%">
 </p>
 
 Устройство состоит из следующих функциональных узлов:
@@ -146,7 +140,7 @@ Developed as a course project at the Department IU4 "Design and Technology of El
 ### Алгоритм работы
 
 <p align="center">
-  <img src="docs/images/firmware_flowchart_pd1.png" alt="Алгоритм работы ПО (ПД1)" width="80%">
+  <img src="docs/firmware_flowchart_pd1.png" alt="Алгоритм работы ПО (ПД1)" width="80%">
 </p>
 
 1. **Инициализация.** После подачи питания настраиваются выводы светодиодов и кнопок, инициализируются RTC (I²C) и SD-карта (SPI). При ошибке RTC — бесконечное мигание зелёного HL2, при ошибке SD — красного HL3; дальнейшая работа блокируется.
@@ -163,6 +157,6 @@ Developed as a course project at the Department IU4 "Design and Technology of El
 Результаты эксперимента совпадают с результатами моделирования; расхождения объясняются допусками компонентов и условиями измерений. Сравнительный плакат (ПД2):
 
 <p align="center">
-  <img src="docs/images/experiment_results_pd2.png" alt="Сравнение моделирования и эксперимента" width="80%">
+  <img src="docs/experiment_results_pd2.png" alt="Сравнение моделирования и эксперимента" width="80%">
 </p>
 

@@ -11,7 +11,7 @@
 
 **Analog Data Logger based on ATmega328P-PU** — a standalone two-channel data logger that samples analog sensors (A0/A1), timestamps every sample with a DS1307 real-time clock and writes the data to a microSD card (FAT32) as plain text files. Sampling interval, time and date are set through a `CONFIG.TXT` file on the card — no reflashing required. Three LEDs indicate the device state (ready / recording / SD or RTC error); two push-buttons start/stop logging and reset the file counter.
 
-The repository contains the firmware (Arduino IDE), the schematic and PCB design (Altium Designer, 2-layer 50 × 55 mm board manufactured by Rezonit), the Proteus 8 simulation model, the full set of GOST (ЕСКД) design documents and the course-work report (in Russian).
+The repository contains the firmware (platformIO), the schematic and PCB design (Altium Designer, 2-layer 50 × 55 mm board manufactured by Rezonit), the Proteus 8 simulation model, the full set of GOST (ЕСКД) design documents and the course-work report (in Russian).
 
 Developed as a course project at the Department IU4 "Design and Technology of Electronic Equipment", Bauman Moscow State Technical University.
 
